@@ -1,0 +1,26 @@
+body {
+  background-color: #fefefe;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .btn-about {
+    width: 38px;
+    border-radius: 50%;
+  }
+
+  .btn-about::before {
+    content: "i";
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-about::before {
+    content: "About";
+  }
+}
